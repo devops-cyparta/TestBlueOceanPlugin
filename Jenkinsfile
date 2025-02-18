@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Build Completed'
         retry(count: 3) {
-          sh 'zsdsxc'
+          echo 'this try build three times to excute this step'
         }
 
       }
